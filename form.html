@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        #container {
+            /*for registration page size*/
+            width: 50%;
+            height: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            background: #eeeeee;
+        }
+        
+        .col-1.register {
+            float: left;
+            width: 40%;
+        }
+        
+        hi {
+            color: #234467;
+        }
+        
+        .col-1.register h4 {
+            color: #858585
+        }
+        
+        span.h_reg {
+            color: #234467
+        }
+        
+        .col-2.login {
+            float: right;
+            width: 40%;
+            height: 250px;
+            margin-left: 5%;
+            padding: 0 15px;
+            color: #fff;
+            background: #234467;
+        }
+        
+        #course_reg div,
+        #course_login div input[type="text"],
+        #course_login div input[type="password"] {
+            margin-bottom: 10px;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        input#reg_name {
+            outline: none;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            padding: 2px;
+        }
+        
+        .bregister {
+            float: left;
+            background: #fbfbfb;
+            padding: 5px 20px;
+            border: 2px solid #234465;
+            color: #234465;
+            font-weight: bold;
+        }
+        
+        .bregister:hover {
+            background: #234465;
+            color: white;
+        }
+        
+        .remember {
+            float: left;
+        }
+        
+        input.blogin {
+            float: right;
+            background: #234465;
+            padding: 5px 30px;
+            border: 2px solid orange;
+            color: #fff;
+        }
+        
+        input.blogin:hover {
+            background: orange;
+            text-shadow: 1px 1px 1px black;
+        }
+        
+        .forgot {
+            clear: both;
+            float: right;
+            margin: 10px 0;
+            font-size: 12px;
+        }
+        
+        .forgot a {
+            font-style: italic;
+            color: #fff;
+        }
+        
+        .rem_sub {
+            margin: 5px 0;
+        }
+        
+        .red {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Enter The System</h1>
+        <p>It is necessary to login in your account in order to sign up for a course.</p>
+        <div class="col-1 register">
+            <h4>ARE YOU NEW? <span class="h_reg">REGISTER</span></h4>
+            <form id="course_reg">
+                <div><input type="text" placeholder="User name" class="red" id="reg_name" size="35" /></div>
+                <div><input type="text" placeholder="Email" class="red" id="reg_email" size="35" /></div>
+                <div><input type="password" placeholder="Password" class="red" id="reg_pass" size="35" /></div>
+                <div><input type="password" placeholder="Confirm Password" class="red" id="reg_cpass" size="35" /></div>
+                <div><input type="submit" value="Register" class="bregister" size="35" /></div>
+            </form>
+        </div>
+        <div class="col-2 login">
+            <h4>ALREADY A STUDENT? LOGIN</h4>
+            <form id="course_login">
+                <div><input type="text" placeholder="User name" size="35" /></div>
+                <div><input type="password" placeholder="Password" size="35" /></div>
+                <div class="rem_sub">
+                    <div class="remember"><input type="checkbox">&nbsp; Remember me?</div>
+                    <input type="submit" value="Login" class="blogin">
+                </div>
+                <div class="forgot"><a href="#">Forgot Password?</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
